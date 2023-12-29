@@ -66,14 +66,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Former Answer: True" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-Lo-noI">
-                                <rect key="frame" x="94" y="740.33333333333337" width="205" height="27.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Former Answer: True" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-Lo-noI">
+                                <rect key="frame" x="94" y="742" width="205" height="27.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-eh-vbf">
-                                <rect key="frame" x="28" y="663" width="336" height="50"/>
+                                <rect key="frame" x="28" y="676" width="336" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huv-te-Jmy">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
@@ -97,6 +97,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="336" id="MTm-TM-Lxu"/>
                                     <constraint firstAttribute="width" constant="250" id="eVS-fm-YVr"/>
                                     <constraint firstAttribute="height" constant="50" id="ozM-3K-1Cm"/>
                                 </constraints>
@@ -105,19 +106,32 @@
                         <viewLayoutGuide key="safeArea" id="CXU-S6-hUu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nzt-eh-vbf" firstAttribute="centerX" secondItem="iCB-oP-G2M" secondAttribute="centerX" id="1gx-Tm-QdG"/>
+                            <constraint firstItem="nzt-eh-vbf" firstAttribute="centerX" secondItem="iCB-oP-G2M" secondAttribute="centerX" id="3jM-aJ-7FJ"/>
                             <constraint firstItem="CXU-S6-hUu" firstAttribute="bottom" secondItem="Gof-Lo-noI" secondAttribute="bottom" constant="50" id="5G7-JG-HQl"/>
                             <constraint firstItem="nzt-eh-vbf" firstAttribute="leading" secondItem="CXU-S6-hUu" secondAttribute="leading" constant="20" id="HfQ-Kn-N89"/>
                             <constraint firstItem="mj1-74-6yM" firstAttribute="top" secondItem="CXU-S6-hUu" secondAttribute="top" constant="120" id="KF4-kL-443"/>
                             <constraint firstItem="CXU-S6-hUu" firstAttribute="trailing" secondItem="nzt-eh-vbf" secondAttribute="trailing" constant="15" id="SKv-Q9-sPv"/>
+                            <constraint firstItem="nzt-eh-vbf" firstAttribute="centerY" secondItem="iCB-oP-G2M" secondAttribute="centerY" id="ShU-aO-Wcd"/>
                             <constraint firstItem="nzt-eh-vbf" firstAttribute="leading" secondItem="CXU-S6-hUu" secondAttribute="leading" constant="30" id="XmY-jx-SEw"/>
                             <constraint firstItem="CXU-S6-hUu" firstAttribute="trailing" secondItem="nzt-eh-vbf" secondAttribute="trailing" constant="10" id="aO6-rK-ull"/>
                             <constraint firstItem="nzt-eh-vbf" firstAttribute="leading" secondItem="CXU-S6-hUu" secondAttribute="leading" constant="15" id="akH-An-OCu"/>
                             <constraint firstItem="Gof-Lo-noI" firstAttribute="top" secondItem="nzt-eh-vbf" secondAttribute="bottom" constant="50" id="hsS-9b-Dr0"/>
                             <constraint firstItem="nzt-eh-vbf" firstAttribute="leading" secondItem="CXU-S6-hUu" secondAttribute="leading" constant="10" id="jug-MA-grP"/>
                             <constraint firstItem="T4l-aR-9xR" firstAttribute="top" secondItem="CXU-S6-hUu" secondAttribute="top" constant="10" id="r82-ly-h7E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nzt-eh-vbf" secondAttribute="trailing" constant="28" id="xio-iA-MFa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wfM-TD-MxU"/>
+                    <connections>
+                        <outlet property="button1" destination="huv-te-Jmy" id="8JX-jb-iWJ"/>
+                        <outlet property="button2" destination="IqS-cR-qI9" id="9hH-K7-WKd"/>
+                        <outlet property="button3" destination="yIN-cJ-82j" id="tyc-Qo-3EV"/>
+                        <outlet property="button4" destination="YB4-L3-gp6" id="pA2-3o-qEm"/>
+                        <outlet property="questionLabel" destination="mj1-74-6yM" id="07S-qp-43B"/>
+                        <outlet property="resultLabel" destination="Gof-Lo-noI" id="GD0-Iz-zgv"/>
+                        <outlet property="timeLabel" destination="T4l-aR-9xR" id="nK7-vA-1St"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIP-R2-n9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
