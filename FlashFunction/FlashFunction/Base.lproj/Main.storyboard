@@ -131,6 +131,7 @@
                         <outlet property="questionLabel" destination="mj1-74-6yM" id="07S-qp-43B"/>
                         <outlet property="resultLabel" destination="Gof-Lo-noI" id="GD0-Iz-zgv"/>
                         <outlet property="timeLabel" destination="T4l-aR-9xR" id="nK7-vA-1St"/>
+                        <segue destination="vkj-Pp-Hcm" kind="show" identifier="result" id="re7-TO-lcH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIP-R2-n9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -172,6 +173,7 @@
                             <constraint firstItem="rkl-nE-JDf" firstAttribute="centerX" secondItem="8q0-S0-AyS" secondAttribute="centerX" id="eym-Ep-7Cz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="piq-yv-LSv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yl-4V-5N8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

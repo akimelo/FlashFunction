@@ -43,6 +43,7 @@ class CalcViewController: UIViewController {
         timeLabel.text = "Time: \(time) sec"
         if time == 0 {
             timer?.invalidate()
+            performSegue(withIdentifier: "result", sender: nil)
         }
     }
     
