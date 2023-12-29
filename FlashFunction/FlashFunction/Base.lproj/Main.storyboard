@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Calc View Controller-->
         <scene sceneID="IgF-6p-EBH">
             <objects>
-                <viewController id="POm-WX-RXW" sceneMemberID="viewController">
+                <viewController id="POm-WX-RXW" customClass="CalcViewController" customModule="FlashFunction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iCB-oP-G2M">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
