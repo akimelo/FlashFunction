@@ -54,7 +54,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Time: 20sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4l-aR-9xR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Time: 5sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4l-aR-9xR">
                                 <rect key="frame" x="283" y="69" width="94" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="994.6564885496183" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Reslut View Controller-->
         <scene sceneID="vhZ-oB-O4m">
             <objects>
-                <viewController id="vkj-Pp-Hcm" sceneMemberID="viewController">
+                <viewController id="vkj-Pp-Hcm" customClass="ReslutViewController" customModule="FlashFunction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8q0-S0-AyS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,6 +163,9 @@
                                 <rect key="frame" x="139" y="723" width="115" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Push to Top"/>
+                                <connections>
+                                    <action selector="onBackTop:" destination="vkj-Pp-Hcm" eventType="touchUpInside" id="sVs-U9-0gH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FGf-FV-EVE"/>
@@ -174,6 +177,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="piq-yv-LSv"/>
+                    <connections>
+                        <outlet property="recordLabel" destination="rkl-nE-JDf" id="LMv-3z-8o0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yl-4V-5N8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

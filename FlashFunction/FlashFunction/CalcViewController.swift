@@ -21,7 +21,7 @@ class CalcViewController: UIViewController {
     
     var answer = 0
     var point = 0
-    var time = 20
+    var time = 5
     var timer:Timer?
     
     override func viewDidLoad() {
@@ -45,6 +45,11 @@ class CalcViewController: UIViewController {
             timer?.invalidate()
             performSegue(withIdentifier: "result", sender: nil)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! ReslutViewController
+        nextVC.point = point
     }
     
     @objc func onButton(_ sender:UIButton){
