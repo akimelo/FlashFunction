@@ -21,7 +21,7 @@ class CalcViewController: UIViewController {
     
     var answer = 0
     var point = 0
-    var time = 5
+    var time = 10
     var timer:Timer?
     
     override func viewDidLoad() {
